@@ -11,7 +11,7 @@ This repo contains code for my experiments in Deep Learning for NLP. Where possi
 [comment]![without-bn][without-bn] ![with-bn][with-bn]
 <p float="middle">
 	<img src="./images/vgg11-layer10-noBN.png" width="50" />
-	<img src="./images/vgg11-layer10-BN.png" widht="50" />
+	<img src="./images/vgg11-layer10-BN.png" width="50" />
 </p>
 * Colab notebook coming soon.
 
