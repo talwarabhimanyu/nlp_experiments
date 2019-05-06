@@ -14,7 +14,9 @@ This repo contains code for my experiments in Deep Learning for NLP. Where possi
 * [Click this link for Colab Notebook](https://colab.research.google.com/drive/1nD2s4r7XrYP95gxfBoTr3Ajy9QW4YjUQ "Language Model with Beam Search")
 
 ### Visualization of Layer Activation Distribution with and without BatchNorm
-* Inspired by the paper [_How Does Batch Normalization Help Optimization?_](https://arxiv.org/abs/1805.11604), this notebook trains a VGG-11 architecture on CIFAR-10 and compares layer activation distributions with and without BatchNorm. 
+* Inspired by the paper [_How Does Batch Normalization Help Optimization?_](https://arxiv.org/abs/1805.11604), this notebook trains a VGG-11 architecture on CIFAR-10 and compares layer activation distributions with and without BatchNorm. I do observe slight shift in the distribution (without BatchNorm) between epochs 0-10, however it does not seem severe (sorry for not being precise!).
+
+  Santurkar et. al do note in the paper that the "difference in disitributional stability ... seems to be marginal."
 * The plots below show disitribution of activations of Layer 10 (of the VGG11 network without BatchNorm) with and without using BatchNorm (see notebook for code).
 	<p float="middle">
 		<img src="./images/vgg11-layer10-noBN.png" width="35%" />
