@@ -10,8 +10,8 @@ This repo contains code for my experiments in Deep Learning for NLP. Where possi
 * Inspired by the paper [_How Does Batch Normalization Help Optimization?_](https://arxiv.org/abs/1805.11604), this notebook trains a VGG-11 architecture om CIFAR-10 and compares layer activation distributions with and without BatchNorm:
 [comment]![without-bn][without-bn] ![with-bn][with-bn]
 <p float="middle">
-	<img src="./images/vgg11-layer10-noBN.png" width="50" />
-	<img src="./images/vgg11-layer10-BN.png" width="50" />
+	<img src="./images/vgg11-layer10-noBN.png" width="80" />
+	<img src="./images/vgg11-layer10-BN.png" width="80" />
 </p>
 * Colab notebook coming soon.
 
