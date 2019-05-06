@@ -4,7 +4,7 @@ This repo contains code for my experiments in Deep Learning for NLP. Where possi
 # List of Experiments
 1. [Simple LSTM based Language Model with Beam Search](#Simple-LSTM-based-Language-Model-with-Beam-Search) ([Colab Notebook](https://colab.research.google.com/drive/1nD2s4r7XrYP95gxfBoTr3Ajy9QW4YjUQ "Language Model with Beam Search"))
 )
-2. [Visualization of Layer Activation Distribution with-&-without BatchNorm](#Visualization-of-Layer-Activation-Distribution-with-&-without-BatchNorm)
+2. [Visualization of Layer Activation Distribution with & without BatchNorm](#Visualization-of-Layer-Activation-Distribution-with-and-without-BatchNorm)
 
 
 
@@ -13,7 +13,7 @@ This repo contains code for my experiments in Deep Learning for NLP. Where possi
 * My implementation of an LSTM based language model with Beam Search (for sentence generation).
 * [Click this link for Colab Notebook](https://colab.research.google.com/drive/1nD2s4r7XrYP95gxfBoTr3Ajy9QW4YjUQ "Language Model with Beam Search")
 
-### Visualization of Layer Activation Distribution with & without BatchNorm
+### Visualization of Layer Activation Distribution with and without BatchNorm
 * Inspired by the paper [_How Does Batch Normalization Help Optimization?_](https://arxiv.org/abs/1805.11604), this notebook trains a VGG-11 architecture on CIFAR-10 and compares layer activation distributions with and without BatchNorm. 
 * The plots below show disitribution of activations of Layer 10 (of the VGG11 network without BatchNorm) with and without using BatchNorm (see notebook for code).
 	<p float="middle">
