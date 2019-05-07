@@ -25,7 +25,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 		<img src="./images/vgg11-layer10-noBN.png" width="35%" />
 		<img src="./images/vgg11-layer10-BN.png" width="35%" />
 	</p>
-* **BN speeds up training even if distribution stabilization effect is suppressed:** In line with the authors experiments, I injected random Gaussian noise *after* the first BatchNorm layer which precedes Layer 10. the plots below show the impact of this noise of distribution of Layer 10 activation (for networks with and without BatchNorm).
+* **BN speeds up training even if distribution stabilization effect is suppressed:** Borrowing from the authors' experiments, I injected random Gaussian noise *after* the first BatchNorm layer which precedes Layer 10, with the intent of destabilizing the activation distribution again. The plots below show the impact of this noise on distribution of Layer 10 activations (for networks with and without BatchNorm).
 
 	<p float="center">
 		<img src="./images/noisyBN-vgg11-layer10-noBN.png" width="35%" />
