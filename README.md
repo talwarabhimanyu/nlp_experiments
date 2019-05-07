@@ -22,18 +22,18 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
   Santurkar et. al do note in the paper that the "difference in disitributional stability [...] seems to be marginal."
 
 	<p float="center">
-		<img src="./images/vgg11-layer10-noBN.png" width="35%" />
-		<img src="./images/vgg11-layer10-BN.png" width="35%" />
+		<img src="./images/vgg11-layer10-noBN.png" width="40%" />
+		<img src="./images/vgg11-layer10-BN.png" width="40%" />
 	</p>
 * **BN speeds up training even if distribution stabilization effect is suppressed:** Borrowing from the authors' experiments, I injected random Gaussian noise *after* the first BatchNorm layer which precedes Layer 10, with the intent of destabilizing the activation distribution again. The plots below show the impact of this noise on distribution of Layer 10 activations (for networks with and without BatchNorm).
 
 	<p float="center">
-		<img src="./images/noisyBN-vgg11-layer10-noBN.png" width="35%" />
-		<img src="./images/noisyBN-vgg11-layer10-BN.png" width="35%" />
+		<img src="./images/noisyBN-vgg11-layer10-noBN.png" width="40%" />
+		<img src="./images/noisyBN-vgg11-layer10-BN.png" width="40%" />
 	</p>
   The plot below shows training performance (loss and accuracy for train/validation sets). If the hypothesis is that BatchNorm improves training by stabilizing activation distributions, then that seems somewhat dispelled by this plot. The blue lines plot the regime where I introduced noise *after* the BatchNorm layer, to destabilize activations. We can observe that even after introducing noise, training accuracy improved at a faster pace, than in the case of the black line, which plots the vanilla regime (no noise and no BatchNorm), at least for the first 15 epochs or so.
 
   	<p float="center">
-		<img src="./images/bn-comparison.png" width="80%" />
+		<img src="./images/bn-comparison.png" width="90%" />
 	</p>
 		
