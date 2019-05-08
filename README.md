@@ -4,7 +4,7 @@ This repo contains code for my experiments in Deep Learning for NLP. Where possi
 For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 'gmail')
 
 # List of Experiments
-1. [Simple LSTM based Language Model with Beam Search](#Simple-LSTM-based-Language-Model-with-Beam-Search) ([Colab Notebook](https://colab.research.google.com/drive/1nD2s4r7XrYP95gxfBoTr3Ajy9QW4YjUQ "Language Model with Beam Search"))
+1. [Simple LSTM based Language Model with Beam Search](#Simple-LSTM-based-Language-Model-with-Beam-Search) ([Colab Notebook](https://colab.research.google.com/drive/1qv9-LVdIe0boX2HxHLl-zov1NSErif-T "Language Model with Beam Search"))
 
 2. [Visualization of Layer Activation Distribution with & without BatchNorm](#Visualization-of-Layer-Activation-Distribution-with-and-without-BatchNorm) ([Colab Notebook](https://colab.research.google.com/drive/1_glfmBfFWiqKbXAcjXEMngIZC8af8UtC "Visualize Activation Distributions with and without BatchNorm"))
 
