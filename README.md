@@ -11,8 +11,12 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
-* My implementation of an LSTM based language model with Beam Search (for sentence generation).
-* [Click this link for Colab Notebook](https://colab.research.google.com/drive/1nD2s4r7XrYP95gxfBoTr3Ajy9QW4YjUQ "Language Model with Beam Search")
+* My implementation of a simple LSTM based language model with Beam Search (for sentence generation), trained on the WikiText-2 dataset.
+* I used this language model to see if there is any bias in the underlying dataset. I started with the seed words 'he' and 'she' and sampled random sentences starting with these seedwords (see below). I observer that sentences beginning with 'he' were more or less about sports, and those beginning with 'she' were about music.
+
+	<p float="center">
+		<img src="./images/he-she.png" width="60%" />
+	</p>
 
 ## Visualization of Layer Activation Distribution with and without BatchNorm
 * Inspired by the paper [_How Does Batch Normalization Help Optimization?_](https://arxiv.org/abs/1805.11604), this notebook trains a VGG-11 architecture on CIFAR-10 and compares layer activation distributions with and without BatchNorm. I observe activations of Layer 10 of the original VGG11 network (the one which does not use BatchNorm).
