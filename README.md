@@ -36,4 +36,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
   	<p float="center">
 		<img src="./images/bn-comparison.png" width="90%" />
 	</p>
-		
+* **Does mere whitening of a layer's outputs suffice for stabilizing activation distribution?** Authors Ioffee and Szegedy note in their  original BatchNorm paper that mere whitening of a layer's activations does not work. They describe a toy example in which a single layer adds an intercept (which is learned) to its inputs, and then normalizes the output by subtracting the mean over the outputs. They explain that if the gradient calculation does not take this normalization into account, then the layer's output and correspondingly the loss would never change even as the intercept value continues to increase. I try to reproduce that toy example below. 	
+	<p float="center">
+		<img src="./images/whiten.png" width="90%" />
+	</p>
