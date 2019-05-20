@@ -8,7 +8,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 
 2. [Visualization of Layer Activation Distribution with & without BatchNorm](#Visualization-of-Layer-Activation-Distribution-with-and-without-BatchNorm) ([Colab Notebook](https://colab.research.google.com/drive/1_glfmBfFWiqKbXAcjXEMngIZC8af8UtC "Visualize Activation Distributions with and without BatchNorm"))
 
-3. [Visualizing BERT's Attention for SQuAD 2.0](#Visualizing-BERT's-Attention-for-SQuAD-2.0) (Colab Notebook[](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj))
+3. [Visualizing BERT Attention for SQuAD 2.0](#Visualizing-BERT-Attention-for-SQuAD-2.0) ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj))
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -46,7 +46,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 		<img src="./images/whiten.png" width="50%" />
 	</p>
 
-## Visualizing BERT's Attention for SQuAD 2.0
+## Visualizing BERT Attention for SQuAD 2.0
 * Visualize [BERT's](https://arxiv.org/abs/1810.04805) attention of a Question over Question+Context from the [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/) dataset. An example Context and Question pair from the Validation set:
 <strong>Context:</strong>
 <blockquote>
@@ -58,7 +58,7 @@ The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the peop
 In what country is Normandy located?
 </blockquote>
 
-  BERT has multiple parallel attention heads. The figure below shows the attenion visualization for Layer 10. The darker the color, the closer the attention weight is to 1.0.
+  BERT has multiple parallel attention heads. The figure below shows the attenion visualization for Layer 10. The darker the color, the closer the attention weight is to 1.0. The answer to this Question is "France". The interpretation of attention is not entirely clear and needs more work. One can observe that the token immediately after "France" in the Context text gets a very high attention weight in this Attention Head. The token "France" also gets a higher weight than rest of the tokens.
 
   <p float="center">
   	<img src="./images/Layer10.png" width="100%" />
