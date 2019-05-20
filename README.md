@@ -8,7 +8,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 
 2. [Visualization of Layer Activation Distribution with & without BatchNorm](#Visualization-of-Layer-Activation-Distribution-with-and-without-BatchNorm) ([Colab Notebook](https://colab.research.google.com/drive/1_glfmBfFWiqKbXAcjXEMngIZC8af8UtC "Visualize Activation Distributions with and without BatchNorm"))
 
-3. [Visualizing BERT Attention for SQuAD 2.0](#Visualizing-BERT-Attention-for-SQuAD-2.0) ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj))
+3. [Visualizing BERT Attention for SQuAD](#Visualizing-BERT-Attention-for-SQuAD) ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj))
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -46,7 +46,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 		<img src="./images/whiten.png" width="50%" />
 	</p>
 
-## Visualizing BERT Attention for SQuAD 2.0
+## Visualizing BERT Attention for SQuAD
 * Visualize [BERT's](https://arxiv.org/abs/1810.04805) attention of a Question over Question+Context from the [SQuAD 2.0](https://rajpurkar.github.io/SQuAD-explorer/explore/v2.0/dev/) dataset. An example Context and Question pair from the Validation set:
 <strong>Context:</strong>
 <blockquote>
