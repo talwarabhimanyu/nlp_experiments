@@ -64,4 +64,4 @@ In what country is Normandy located?
   	<img src="./images/Layer10.png" width="100%" />
   </p>
 
-* **Credits**: A big shoutout to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/). I used their BERT architecture and training code. My contribution was finetuning BERT on SquAD 2.0, and writing the code for extracting/visualizing attention.
+* **Credits**: A big shoutout to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/). I used their BERT implementation and associated training code. My contribution was finetuning BERT on SQuAD 2.0, and writing the code for extracting/visualizing attention.
