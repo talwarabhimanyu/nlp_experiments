@@ -58,10 +58,10 @@ The Normans (Norman: Nourmands; French: Normands; Latin: Normanni) were the peop
 In what country is Normandy located?
 </blockquote>
 
-  BERT has multiple parallel attention heads. The figure below shows the attenion visualization for Layer 10. The darker the color, the closer the attention weight is to 1.0. The answer to this Question is "France". The interpretation of attention is not entirely clear and needs more work. One can observe that the token immediately after "France" in the Context text gets a very high attention weight in this Attention Head. The token "France" also gets a higher weight than rest of the tokens.
+  I have used the BERT-Base model which has 12 Layers and each Layer has a Multi-head Attention mechanism with 12 heads. The figure below shows the attenion visualization for Layer 10, Head 1. The darker the color, the closer the attention weight is to 1.0. The answer to this Question is "France". While each of the 144 Attention Heads in this model may be attending to different parts of the input, at least in this case one can observe that the tokens "what country" are attending to "France" in the Context text. I need to do further work on interpretation of individual Attention Heads.
 
   <p float="center">
-  	<img src="./images/Layer10.png" width="100%" />
+  	<img src="./images/Layer10Head1.png" width="100%" />
   </p>
 
 * **Credits**: A big shoutout to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/). I used their BERT implementation and associated training code. My contribution was finetuning BERT on SQuAD 2.0, and writing the code for extracting/visualizing attention.
