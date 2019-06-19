@@ -10,7 +10,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 
 3. [Visualizing BERT Attention for SQuAD](#Visualizing-BERT-Attention-for-SQuAD) ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj))
 
-4. [QandA on Wikipedia using BERT](#QandA-on-Wikipedia-using-BERT)
+4. [Simple QandA on Wikipedia using BERT](#Simple-QandA-on-Wikipedia-using-BERT) ([Colab Notebook](https://colab.research.google.com/drive/1LrsfERlQcSvU89j5WyabshyOnZN8DNGD))
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -68,11 +68,11 @@ In what country is Normandy located?
 
 * **Credits**: A big shoutout to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/). I used their BERT implementation and associated training code. My contribution was finetuning BERT on SQuAD 2.0, and writing the code for extracting/visualizing attention.
 
-## QandA on Wikipedia using BERT
+## Simple QandA on Wikipedia using BERT
 * I use a user's question to query Wikipedia, and use the top article's first few lines as context for a BERT fine-tuned on SQuAD 2.0, to answer the user's question. Some (good) results below: 
 
   <p float="center">
   	<img src="./images/wikiqa-bert.png" width="100%" />
   </p>
 
-
+* **Credits**: Again, thanks to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/), whose pre-trained BERT implementation and associated training code I have used. Thanks to [Wikipedia](https://www.wikipedia.org/), for providing all the answers. My contribution was finetuning BERT on SQuAD 2.0, and writing the code for fetching and processing articles from Wikipedia for feeding them to BERT.
