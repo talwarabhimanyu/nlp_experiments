@@ -10,6 +10,8 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 
 3. [Visualizing BERT Attention for SQuAD](#Visualizing-BERT-Attention-for-SQuAD) ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj))
 
+4. [QandA on Wikipedia using BERT](#QandA-on-Wikipedia-using-BERT)
+
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
 * My implementation of a simple LSTM based language model with Beam Search (for sentence generation), trained on the WikiText-2 dataset.
@@ -65,3 +67,12 @@ In what country is Normandy located?
   </p>
 
 * **Credits**: A big shoutout to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/). I used their BERT implementation and associated training code. My contribution was finetuning BERT on SQuAD 2.0, and writing the code for extracting/visualizing attention.
+
+## QandA on Wikipedia using BERT
+* I use a user's question to query Wikipedia, and use the top article's first few lines as context for a BERT fine-tuned on SQuAD 2.0, to answer the user's question. Some (good) results below: 
+
+  <p float="center">
+  	<img src="./images/wikiqa-bert.png" width="100%" />
+  </p>
+
+
