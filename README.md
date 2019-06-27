@@ -10,6 +10,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 |2.| [Visualization of Layer Activation Distribution with & without BatchNorm](#Visualization-of-Layer-Activation-Distribution-with-and-without-BatchNorm) | ([Colab Notebook](https://colab.research.google.com/drive/1_glfmBfFWiqKbXAcjXEMngIZC8af8UtC "Visualize Activation Distributions with and without BatchNorm")) |
 |3.| [Visualizing BERT Attention for SQuAD](#Visualizing-BERT-Attention-for-SQuAD) | ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj)) |
 |4.| [Simple QandA on Wikipedia using BERT](#Simple-QandA-on-Wikipedia-using-BERT) | ([Colab Notebook](https://colab.research.google.com/drive/1LrsfERlQcSvU89j5WyabshyOnZN8DNGD)) |
+|5.| [Table Detection in Documents](#-Table-Detection-in-Documents) | ([Colab Notebook](https://colab.research.google.com/drive/1RNO86XZPjpKxHlRTGso4PQiYD7qgzFXZ)) |
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -75,3 +76,21 @@ In what country is Normandy located?
   </p>
 
 * **Credits**: Again, thanks to [Hugging Face](https://github.com/huggingface/pytorch-pretrained-BERT/), whose pre-trained BERT implementation and associated training code I have used. Thanks to [Wikipedia](https://www.wikipedia.org/), for providing all the answers. My contribution was finetuning BERT on SQuAD 2.0, and writing the code for fetching and processing articles from Wikipedia for feeding them to BERT.
+
+## Table Detection in Documents
+* This is a rather crude project (with a HUGE scope for further work) which attempts to detect tables inside a document page. The bigger goal is to eventually develop a detection+recognition system which can transcribe all tables inside a document in a proper format. I used a CNN architecture (similar to that proposed in [EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155)) for this task. I trained this network on a synthetic dataset created by me to mimic real financial documents. While this work is FAR from being perfect, I still wanted to put it out there as a first attempt towards a challenging goal.
+
+* **Some Results:**
+ * **Training Set:** These are from the synthetic dataset of 20k images that I created by fusing together elements of four types: (1) text, (2) tables, (3) plots, (4) random images.
+
+  <p float="center">
+  	<img src="./images/simple-table-train-1.png" width="40%" />
+  	<img src="./images/simple-table-train-2.png" width="40%" />
+  </p>
+
+ * **Test Set**
+
+  <p float="center">
+  	<img src="./images/simple-table-test-1.png" width="40%" />
+  	<img src="./images/simple-table-test-2.png" width="40%" />
+  </p>
