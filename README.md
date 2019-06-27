@@ -80,7 +80,7 @@ In what country is Normandy located?
 ## Table Detection in Documents
 * This is a rather crude project (with a HUGE scope for further work) which attempts to detect tables inside a document page. The bigger goal is to eventually develop a detection+recognition system which can transcribe all tables inside a document in a proper format. I used a CNN architecture (similar to that proposed in [EAST: An Efficient and Accurate Scene Text Detector](https://arxiv.org/abs/1704.03155)) for this task. I trained this network on a synthetic dataset created by me to mimic real financial documents. While this work is FAR from being perfect, I still wanted to put it out there as a first attempt towards a challenging goal.
 
-* **Some Results:**
+* **Some Results:** The yellow shaded area represents presence of a detected table.
   * **Training Set:** These are from the synthetic dataset of 20k images that I created by fusing together elements of four types: (1) text, (2) tables, (3) plots, (4) random images.
 
    <p float="center">
