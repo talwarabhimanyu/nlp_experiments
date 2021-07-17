@@ -11,6 +11,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 |3.| [Visualizing BERT Attention for SQuAD](#Visualizing-BERT-Attention-for-SQuAD) | ([Colab Notebook](https://colab.research.google.com/drive/1Xph-1GLUf4BRzCD9UXWY7EphRi2t9cBj)) |
 |4.| [Simple QandA on Wikipedia using BERT](#Simple-QandA-on-Wikipedia-using-BERT) | ([Colab Notebook](https://colab.research.google.com/drive/1LrsfERlQcSvU89j5WyabshyOnZN8DNGD)) |
 |5.| [Table Detection in Documents](#Table-Detection-in-Documents) | ([Colab Notebook](https://colab.research.google.com/drive/1RNO86XZPjpKxHlRTGso4PQiYD7qgzFXZ)) |
+|6.| [Language Modeling with OpenAI GPT2](#GPT2-Language-Modeling) | ([Colab Notebook](https://colab.research.google.com/drive/1Dij64w2CGV67dwdHN0lfep_R5k0DZ71G)) |
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -94,3 +95,9 @@ In what country is Normandy located?
    	<img src="./images/simple-table-test-1.png" width="45%" />
    	<img src="./images/simple-table-test-2.png" width="45%" />
    </p>
+
+## GPT2 Language Modeling
+Language Modeling with OpenAI's GPT2. I draw samples using:
+* Beam Search
+* Random sampling at each time step
+* Selecting the most likely word at each time step
