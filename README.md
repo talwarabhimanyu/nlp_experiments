@@ -12,6 +12,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 |4.| [Simple QandA on Wikipedia using BERT](#Simple-QandA-on-Wikipedia-using-BERT) | ([Colab Notebook](https://colab.research.google.com/drive/1LrsfERlQcSvU89j5WyabshyOnZN8DNGD)) |
 |5.| [Table Detection in Documents](#Table-Detection-in-Documents) | ([Colab Notebook](https://colab.research.google.com/drive/1RNO86XZPjpKxHlRTGso4PQiYD7qgzFXZ)) |
 |6.| [Language Modeling with OpenAI GPT2](#GPT2-Language-Modeling) | ([Colab Notebook](https://colab.research.google.com/drive/1Dij64w2CGV67dwdHN0lfep_R5k0DZ71G)) |
+|7.| [TF-IDF in Python](#TF-IDF-in-Pytnon) | ([Colab Notebook](https://colab.research.google.com/drive/1D8gfU8DPWvDPt4FBmt4KYW5n7btugI9t)) |
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -101,3 +102,6 @@ Language Modeling with OpenAI's GPT2. I draw samples using:
 * Beam Search
 * Random sampling at each time step
 * Selecting the most likely word at each time step
+
+## TF IDF in Python
+An implementation of TF-IDF in Python with basic preprocessing (stopword removal, lowercasing etc.)
