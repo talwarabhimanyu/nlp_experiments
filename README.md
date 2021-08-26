@@ -13,6 +13,7 @@ For feedback, feel free to reach me on: '{}@{}.com'.format('abhimanyu.talwar1', 
 |5.| [Table Detection in Documents](#Table-Detection-in-Documents) | ([Colab Notebook](https://colab.research.google.com/drive/1RNO86XZPjpKxHlRTGso4PQiYD7qgzFXZ)) |
 |6.| [Language Modeling with OpenAI GPT2](#GPT2-Language-Modeling) | ([Colab Notebook](https://colab.research.google.com/drive/1Dij64w2CGV67dwdHN0lfep_R5k0DZ71G)) |
 |7.| [TF-IDF in Python](#TF-IDF-in-Pytnon) | ([Colab Notebook](https://colab.research.google.com/drive/1595CxXFzTr96ekUZUrwdjVAEUD1PfJj5)) |
+|8.| [LSTM POS Tagger](#LSTM-POS-Tagger) | ([Colab Notebook](https://colab.research.google.com/drive/1rFSwbPhEXu3pQYLdel1Da0y3Zt5N0Xjs)) |
 
 # Experiment Details
 ## Simple LSTM based Language Model with Beam Search
@@ -105,3 +106,6 @@ Language Modeling with OpenAI's GPT2. I draw samples using:
 
 ## TF IDF in Python
 An implementation of TF-IDF in Python with basic preprocessing (stopword removal, lowercasing etc.)
+
+## LSTM POS Tagger
+A bi-LSTM based POS tagger. I initialize embeddings using GloVe uncased 300D embeddings. I compare model predictions with SpaCy's POS Tagger predictions.
